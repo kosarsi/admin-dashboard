@@ -26,19 +26,96 @@ body {
 }
 
 .search {
-    background-color: red;
+    background-color: white;
+}
+
+.search img:hover {
+    cursor: pointer;
 }
 
 .hello {
-    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 7fr;
+}
+
+.buttons button {
+    background-color: #4590CE;
+    color: white;
+    border: 2px solid #4590CE;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buttons button:hover {
+    background-color: white;
+    border-color: #4590CE;
+    color: #4590CE;
+    cursor: pointer;
+}
+
+.hello .profile-pic {
+    grid-area: 1 / 1 / 3 / 2;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.profile-pic #profile-pic {
+    width: 50%;
+    padding-bottom: 25%;
+    padding-top: 25%;
+    background-color: #F3CE49;
+    border-radius: 9999999px;
+}
+
+.hello div span {
+    font-weight: 500;
+}
+
+.hello div {
+    padding: 0 0;
+}
+
+.hi, 
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hi {
+    justify-content: flex-end;
+}
+
+.name {
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.name span {
+    font-size: 24px;
 }
 
 .buttons {
-    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .notifications {
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 50px;
 }
 
 .sidebar {
@@ -81,6 +158,10 @@ img[src="view-dashboard.svg"] {
     align-items: center;
 }
 
+.general div:hover {
+    cursor: pointer;
+}
+
 .general > div > img {
     height: 60%;
     padding: 8%;
@@ -104,6 +185,10 @@ img[src="view-dashboard.svg"] {
     align-items: center;
 }
 
+.preferences div:hover {
+    cursor: pointer;
+}
+
 .preferences > div > img {
     height: 60%; 
     padding: 8%; 
@@ -113,3 +198,96 @@ img[src="view-dashboard.svg"] {
     font-size: 1.5vw;
     font-weight: 500;
 }
+
+.search {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.search > img {
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+}
+
+.search-bar {
+    background-color: #E2E8F0;
+    height: 30px;
+    width: 600px;
+    border-radius: 15px;   
+}
+
+.notifications > img {
+    width: 25px;
+    height: 25px;
+}
+
+.notifications img:hover {
+    cursor: pointer;
+}
+
+.notifications .profile-pic {
+    background-color: #FACC15;
+    height: 48px;
+    width: 48px;
+    border-radius: 28px;
+}
+
+.notifications > span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+
+.project-container {
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-title { 
+    padding: 0px 20px;
+}
+
+.projects-title > span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 85%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.projects > div {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.announcements {
+    background-color: red;
+}
+
+.trending {
+    background-color: blue;
+}
+
+
+/*
+Columns are 8-3
+*/ 

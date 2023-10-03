@@ -282,10 +282,6 @@ img[src="view-dashboard.svg"] {
     
 }
 
-.announcements {
-    background-color: red;
-}
-
 .trending {
     background-color: blue;
 }
@@ -316,9 +312,54 @@ img[src="view-dashboard.svg"] {
 
 .icons > img:hover {
     cursor: pointer;
+} 
+
+.announcements-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
 }
 
+.announcements-title {
 
-/*
-Columns are 8-3
-*/ 
+}
+
+.announcements-title > span {
+    font-size: 20px;
+    font-weight: 10px;
+}
+
+.announcements-container > div > div > p {
+    font-size: 13px;
+}
+
+.announcements {
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 225px;
+    /* height: 300px; */
+}
+
+.announcements > div > span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.announcements > div {
+    padding: 10px;
+}
+
+.announcements > div > p {
+    color: #636363;
+}
+
+.community-share {
+    border-top: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+}
